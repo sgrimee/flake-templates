@@ -6,7 +6,6 @@
   '';
   outputs = self: rec {
     templates = {
-
       python = {
         path = ./python;
         description = "Python template";
@@ -21,6 +20,7 @@
         path = ./rust-cuda;
         description = "Rust template with GPU acceleration for Mac and Linux";
       };
+    };
 
     defaultTemplate = templates.python;
   };
